@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgba(241, 231, 231, 0.357);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows:10% 80% 10%;
+}
+header{
+    background-color:#a92121b7;
+    box-shadow: 10px 0px 10px 3px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+
+section{
+    background-color: rgba(241, 231, 231, 0.357);
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.mesas{
+    width: 100%;
+    display: grid;
+    
+
+}
+.mesas div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-left: 10px solid #a92121b7;
+    border-right: 10px solid #00000018;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: "Odibee Sans", sans-serif;
+    color: #000000f6;
+    
+}
+.mesas div:hover{
+    background-color: rgb(79, 70, 135);
+    border: 1px solid #00000013;
+    border-left: 10px solid #a92121b7;
+    border-right: 10px solid #00000018;
+    border-radius: 0px 10px 10px 0px;
+    transform: scale(1.06);
+    color: #fff;
+}
+.mesa{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-items: center;
+    height: 100%;
+}
+.agregara{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.agregar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 80px;
+    background-color: #a92121b7;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 0px 0px #0000008c;
+}
+.agregar:hover{
+    transform: scale(0.98);
+    background-color: #a92121d5;
+    cursor: pointer;
+}
+.persona{
+    position: relative;
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 10px 0 10px 0 #00000063;
+
+}
+.persona:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+.clavo{
+    position: absolute;
+    background-color: rgb(79, 70, 135);
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    top: -10%;
+    left: 45%;
+    box-shadow: 3px 0px 3px 0px;
+}
+.total{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(255, 121, 121);
+    box-shadow: 2px 2px  #000;
+    bottom: -5%;
+    right: -8%;
+    text-align: center;
+    transform: rotate(-10deg);
+    
+}
+.sumaTotal{
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    background-color: #000;
+    border: 3px dashed #fff;
+    bottom: 10%;
+    right: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Micro 5", sans-serif;
+    font-size: 40px;
+}
+.footer{
+    background-color: rgba(241, 231, 231, 0.357);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px ;
+    background-color: #a92121b7;
+    font-size: 25px;
+    font-family: "Odibee Sans", sans-serif;
+    height: 70px;
+    color: #fff;
+    transition: height 0.5s;
+}
+.footer div:hover{
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 10px #000;
+}
+.footer div.active {
+    display: flex;
+    height: 100vh; /* Altura del 100% de la pantalla */
+    border-radius: 10px 10px 0px 0px; 
+    background-color: #fff;
+    color: #000;
+}
